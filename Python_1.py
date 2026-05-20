@@ -31,7 +31,7 @@ def study_planner():
         # Nothing to schedule if the subject list is empty.
         print("No subjects entered.")
         return
-
+    print()
     no_picked = min(3, len(subjects))
     chosen_subjects = random.sample(subjects, no_picked)
 
@@ -71,9 +71,13 @@ def motivation_generator():
     today = datetime.datetime.now()
     weekday = today.weekday()
     hour = today.hour
-    # Ask the user for their current mood so we can provide
-    # a tailored quote and a short, achievable challenge.
-    mood = input("How are you feeling today? (e.g., happy, sad, stressed, tired, anxious) ").strip()
+    # Ask the user for their current mood so we can provide a tailored quote and a short, achievable challenge.
+    mood = input("How are you feeling today? (e.g., happy, sad, stressed, tired, anxious) : ").strip()
+
+    # If the user doesn't enter a mood, do not proceed with feedback.
+    if not mood:
+        print("No mood entered. Returning to the main menu.")
+        return
 
     # Get mood-based motivation (falls back to a random quote)
     quote, challenge, bonus_tip = mood_based_motivation(mood, weekday, hour)
