@@ -1,7 +1,7 @@
 # Python_Mini_Toolkit.py
 #  Student Productivity App 
 
-## ✨ Project Description
+##  Project Description
 
 The **Student Productivity App** is a simple and interactive Python command-line application designed to help students stay productive, organised, and motivated every day.
 
@@ -37,7 +37,7 @@ The motivation feature is personalised based on the user’s mood, making the ap
 
 ---
 
-# 🐍 Python Concepts Used
+#  Python Concepts Used
 
 * Functions
 * Lists
@@ -116,7 +116,7 @@ Through this project, I learned:
 
 ---
 
-# 💕 Created By
+#  Created By
 
 **[Owam Gobinca]**
 
